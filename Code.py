@@ -14,4 +14,4 @@ figl = make_subplots(rows=len(y), cols=1, shared_xaxes=True, vertical_spacing=0.
 
 for i in range(len(y)):
     figl.add_trace(go.Line(x = df[x], y = df[y[i]],name=y[i]),row=len(y)-i, col=1)
-st.plotly_chart(figl)
+plotly_chart(figl).show()
